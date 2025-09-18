@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Моё задание 1</title>
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<ul>
+  <li><a href="http://kubsu.ru/">kubsu (http)</a></li>
+  <li><a href="http://kubsu.ru/">kubsu (https)</a></li>
+  <li><a href="https://kubsu.ru/"><img src="images/Kub.png" alt="kubsu Err" width="600"></a></li>
+  <li><a href="inside/inside_first.html">Внутренняя страница
+  <li><a href="/Vasilisa/">На главную (сокращённая)</a></li>
+  <li><a href="#contacts">Переход к контактам на этой странице</a></li>
+  <li><a href="page.html?p1=1&p2=dwa&p3=3">Ссылка с 3 параметрами</a></li>
+  <li><a href="product.html?id=42">product?id=42</a></li>
+  <li><a href="./incatalog.html"> начальная страница</a></li>
+		<li><a href="./about/about.html"> каталог about</a></li>
+		<li><a href="../home.html"> На уровень выше</a></li>
+		<li><a href="../../roof.html"> На два уровня выше</a></li>
+  <li><p>Подробнее читай в <a href="article.html">нашем материале</a> — ссылка встроена в абзац.</p></li>
+  <li><a href="https://example.com/page.html#section3" target="_blank" rel="noopener">Фрагмент на внешнем сайте</a></li>
+  <li><img src="images/KOT.png" usemap="#mykot" alt="kot example">
+  <map name="mykot">
+    <area shape="rect" coords="0,0,370,695" href="Left-PoluKot.html" alt="rect">
+    <area shape="circle" coords="481,363,45" href="Right-Zrachok.html" alt="circle">
+  </map></li>
+  <li><a href="">Пустой href — ссылка на текущий URL (обновление)</a></li>
+  <li><a>Это элемент <code>a</code> без href — не гиперссылка</a></li>
+  <li><a href="https://external.example/page" rel="nofollow noopener noreferrer">nofollow ссылка</a></li>
+  <ol>
+  <li><a href="link1.html" title="Перейти к разделу 1">Раздел 1</a></li>
+  <li><a href="link2.html" title="Перейти к разделу 2">Раздел 2</a></li>
+  <li><a href="link3.html" title="Перейти к разделу 3">Раздел 3</a></li>
+</ol>
+  <li><a href="ftp://user:password@ftp.example.com/path/to/file.zip">FTP-файл с авторизацией</a></li>
+</ul>
+<h2 id="contacts">Контакты</h2>
+<form action="#" method="post" novalidate>
+  <!-- 1) ФИО -->
+  <label for="fio">ФИО</label>
+  <input id="fio" name="fio" type="text" placeholder="Иванов Иван Иванович" required>
+
+  <!-- 2) Телефон -->
+  <label for="tel">Телефон</label>
+  <input id="tel" name="tel" type="tel" placeholder="+7xxxxxxxxxx" pattern="\+?\d{10,15}" required>
+
+  <!-- 3) e-mail -->
+  <label for="email">E-mail</label>
+  <input id="email" name="email" type="email" placeholder="name@example.com" required>
+
+  <!-- 4) дата рождения -->
+  <label for="bday">Дата рождения</label>
+  <input id="bday" name="bday" type="date" required>
+
+  <!-- 5) пол (радиокнопки) -->
+  <fieldset>
+    <legend>Пол</legend>
+    <label><input type="radio" name="gender" value="male" required> Мужской</label>
+    <label><input type="radio" name="gender" value="female"> Женский</label>
+  </fieldset>
+
+  <!-- 6) любимый язык программирования (множественный выбор) -->
+  <label for="languages"><p></p>Любимый язык программирования</p></label>
+  <select id="languages" name="languages[]" multiple size="6">
+    <option>Pascal</option>
+    <option>C</option>
+    <option>C++</option>
+    <option>JavaScript</option>
+    <option>PHP</option>
+    <option>Python</option>
+    <option>Java</option>
+    <option>Haskel</option>
+    <option>Clojure</option>
+    <option>Prolog</option>
+    <option>Scala</option>
+  </select>
+<p></p>
+  <!-- 7) биография -->
+  <label for="bio">Биография</label>
+  <textarea id="bio" name="bio" rows="6" placeholder="Кратко о себе..."></textarea>
+<p></p>
+  <!-- 8) с контрактом ознакомлен(а) (чекбокс) -->
+  <label><input type="checkbox" name="agree" required> С контрактом ознакомлен(а)</label>
+
+  <!-- 9) кнопка «Сохранить» -->
+  <button type="submit">Сохранить</button>
+</form>
+</body>
+</html>
