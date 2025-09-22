@@ -9,20 +9,23 @@
 <body>
   <body>
   <!-- Шапка -->
+   <section id="main">
   <header>
     <img src="images/Kub.png" alt="Логотип" class="logo">
     <h1>Сайт Рубцовой В.Е.</h1>
+    </section>
   </header>
 
   <!-- Меню -->
   <nav>
     <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Ссылки</a></li>
-      <li><a href="#">Форма</a></li>
-      <li><a href="#">Таблица</a></li>
+      <li><a href="#main">Главная</a></li>
+      <li><a href="#inks1">Ссылки</a></li>
+      <li><a href="#form">Форма</a></li>
+      <li><a href="#tabl">Таблица</a></li>
     </ul>
   </nav>
+  <section id="inks1">
 <ul>
   <li><a href="http://kubsu.ru/">kubsu (http)</a></li>
   <li><a href="http://kubsu.ru/">kubsu (https)</a></li>
@@ -54,8 +57,10 @@
 </ol>
   <li><a href="ftp://user:password@ftp.example.com/path/to/file.zip">FTP-файл с авторизацией</a></li>
 </ul>
+</section>
 <main>
     <!-- Таблица -->
+     <section id="tabl">
     <h2>Таблица студентов</h2>
     <table>
       <tr>
@@ -86,7 +91,9 @@
         <td colspan="3">Итого студентов</td><td>6</td>
       </tr>
     </table>
+    </section>
   </main>
+  <section id="form"></section>
 <h2 id="contacts">Контакты</h2>
 <form action="#" method="post" novalidate>
   <!-- 1) ФИО -->
