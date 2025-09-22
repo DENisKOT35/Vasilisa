@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif; /* Основной шрифт сайта */
+  margin: 0; /* Убираем отступы браузера по умолчанию */
+  padding: 0; /* Убираем внутренние отступы */
+  background-color: #f0e6dd; /* Светлый фон всей страницы */
+  color: #111414; /* Основной цвет текста */
+}
+
+h1, h2, h3 {
+  margin: 0; /* Убираем отступы сверху/снизу у заголовков */
+  font-weight: bold; /* Делаем заголовки жирными */
+  color: #222; /* Цвет текста чуть темнее основного */
+}
+
+p {
+  line-height: 1.6; /* Увеличиваем межстрочный интервал для удобства чтения */
+  margin-bottom: 15px; /* Отступ между абзацами */
+}
+
+/*  ШАПКА */
+header {
+  background: #4a90e2; /* Синий фон шапки */
+  color: rgb(255, 255, 255); /* Белый цвет текста в шапке */
+  padding: 20px; /* Отступы внутри шапки */
+  text-align: center; /* Центрируем текст */
+}
+
+header h1 {
+  font-size: 28px; /* Увеличенный размер заголовка */
+  margin: 0; /* Убираем лишний отступ */
+}
+
+/* МЕНЮ */
+nav {
+  background: #333; /* Тёмный фон для меню */
+  padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+nav ul {
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Размещаем ссылки в одну линию */
+  justify-content: center; /* Центрируем меню */
+}
+
+nav ul li {
+  margin: 0 15px; /* Расстояние между пунктами меню */
+}
+
+nav ul li a {
+  color: white; /* Белый текст */
+  text-decoration: none; /* Убираем подчёркивание */
+  font-weight: bold;
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+nav ul li a:hover {
+  color: #4a90e2; /* Подсветка синем при наведении */
+}
+
+/*  ПОДВАЛ */
+footer {
+  background: #222; /* Тёмный фон подвала */
+  color: #bbb; /* Серый цвет текста */
+  text-align: center; /* Центрируем текст */
+  padding: 15px;
+  margin-top: 20px; /* Отступ сверху, чтобы отделить подвал от контента */
+  font-size: 14px;
+}
+
+footer a {
+  color: #4a90e2; /* Ссылки в подвале — синие */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Подчёркиваем при наведении */
+}
+
+/* ТАБЛИЦА */
+table {
+  width: 80%; /* Задаём ширину таблицы */
+  margin: 20px auto; /* Центрируем таблицу */
+  border-collapse: collapse; /* Убираем двойные границы */
+  background: white; /* Белый фон таблицы */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Лёгкая тень */
+}
+
+table th, table td {
+  border: 1px solid #ddd; /* Светло-серые границы */
+  padding: 10px; /* Внутренний отступ */
+  text-align: center; /* Центрируем текст */
+}
+
+table th {
+  background: #4a90e2; /* Синий фон для заголовков */
+  color: white; /* Белый текст в шапке таблицы */
+}
+
+table tr:nth-child(even) {
+  background: #f2f2f2; /* Чередование строк: чётные серые */
+}
+
+table tr:hover {
+  background: #e6f0ff; /* Подсветка строки при наведении */
+}
