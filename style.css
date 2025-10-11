@@ -13,19 +13,66 @@ body {
   padding: 0 20px;     /* Небольшие отступы по бокам на мобильных */
 }
 
-/* ШАПКА - логотип слева, название справа */
+/* ШАПКА - логотип и название слева, меню справа */
+header {
+  background: #4a90e2; /* Синий фон шапки */
+  color: rgb(255, 255, 255); /* Белый цвет текста в шапке */
+  padding: 0; /* Убираем отступы, чтобы шапка была прижата к краям */
+}
+
 .header-content {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;               /* Включаем flexbox */
-  justify-content: space-between; /* Распределяем пространство между элементами */
-  align-items: center;         /* Выравниваем по вертикали по центру */
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Лого+название слева, меню справа */
+  align-items: center;
+  padding: 10px 20px; /* Небольшие отступы внутри шапки */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Расстояние между логотипом и названием */
 }
 
 .logo {
-  height: 50px; /* Задаём фиксированную высоту логотипу */
-  width: auto;  /* Ширина подстраивается автоматически */
+  height: 40px; /* Фиксированная высота логотипа */
+  width: auto;
+}
+
+header h1 {
+  font-size: 20px; /* Чуть уменьшим размер названия */
+  margin: 0;
+  color: white; /* Белый цвет текста в шапке */
+  white-space: nowrap; /* Чтобы название не переносилось на новую строку */
+}
+
+/* МЕНЮ - теперь в шапке справа */
+nav {
+  background: transparent; /* Прозрачный фон, так как меню теперь в шапке */
+  padding: 0; /* Убираем отступы */
+}
+
+nav ul {
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Размещаем ссылки в одну линию */
+  gap: 20px; /* Расстояние между пунктами меню */
+}
+
+nav ul li {
+  margin: 0; /* Убираем старые отступы */
+}
+
+nav ul li a {
+  color: white; /* Белый текст */
+  text-decoration: none; /* Убираем подчёркивание */
+  font-weight: bold;
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  white-space: nowrap; /* Чтобы ссылки не переносились */
+}
+
+nav ul li a:hover {
+  color: #e6f0ff; /* Светлая подсветка при наведении */
 }
 
 h1, h2, h3 {
@@ -37,48 +84,6 @@ h1, h2, h3 {
 p {
   line-height: 1.6; /* Увеличиваем межстрочный интервал */
   margin-bottom: 15px; /* Отступ между абзацами */
-}
-
-/* ШАПКА */
-header {
-  background: #4a90e2; /* Синий фон шапки */
-  color: rgb(255, 255, 255); /* Белый цвет текста в шапке */
-  padding: 20px 0; /* Отступы сверху и снизу внутри шапки */
-}
-
-header h1 {
-  font-size: 28px; /* Увеличенный размер заголовка */
-  margin: 0; /* Убираем лишний отступ */
-  color: white; /* Белый цвет текста в шапке */
-}
-
-/* МЕНЮ */
-nav {
-  background: #333; /* Тёмный фон для меню */
-  padding: 10px 0; /* Отступы сверху и снизу */
-}
-
-nav ul {
-  list-style: none; /* Убираем маркеры списка */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Размещаем ссылки в одну линию */
-  justify-content: center; /* Центрируем меню */
-}
-
-nav ul li {
-  margin: 0 15px; /* Расстояние между пунктами меню */
-}
-
-nav ul li a {
-  color: white; /* Белый текст */
-  text-decoration: none; /* Убираем подчёркивание */
-  font-weight: bold;
-  transition: color 0.3s; /* Плавное изменение цвета при наведении */
-}
-
-nav ul li a:hover {
-  color: #4a90e2; /* Подсветка синем при наведении */
 }
 
 /* ОСНОВНОЙ КОНТЕНТ */
@@ -96,19 +101,19 @@ section {
 }
 
 /* СТИЛИ ДЛЯ СПИСКА ССЫЛОК */
-#links ul {
+#inks1 ul {
   list-style: none;
   padding: 0;
 }
 
-#links li {
+#inks1 li {
   margin-bottom: 10px;
   padding: 8px;
   background: #f9f9f9;
   border-left: 3px solid #4a90e2;
 }
 
-#links li:hover {
+#inks1 li:hover {
   background: #f0f0f0;
 }
 
